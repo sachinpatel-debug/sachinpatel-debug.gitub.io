@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Bot - Sachin Patel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-header h2 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .project-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .content-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .highlights {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlights h4 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-header h2 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+        <h1>Travis Bot</h1>
+    </header>
+
+    <div class="container">
+        <div class="project-header">
+            <div class="project-meta">
+                <span><strong>Type:</strong> Robotics Project</span>
+                <span><strong>Date:</strong> 2024</span>
+                <span><strong>Role:</strong> Solo Project</span>
+            </div>
+        </div>
+
+        <img src="project1.png" alt="Travis Bot" class="hero-image">
+
+        <div class="content-section">
+            <h3>Overview</h3>
+            <p>Travis Bot is a Travis Scott-themed robot that combines 3D printing, electronics, and programming. The project features a custom 3D printed and painted Travis Scott head mounted on a remote-controlled car platform, all controlled by a Raspberry Pi connected to an Xbox Controller.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Technologies Used</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Raspberry Pi</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">3D Printing</span>
+                <span class="tech-tag">Xbox Controller</span>
+                <span class="tech-tag">Motor Control</span>
+                <span class="tech-tag">GPIO Programming</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Features</h3>
+            <ul>
+                <li>Custom 3D printed Travis Scott head with detailed painting</li>
+                <li>Remote control via Xbox Controller for intuitive operation</li>
+                <li>Raspberry Pi-based control system for flexible programming</li>
+                <li>Motor control for smooth movement and maneuverability</li>
+                <li>Integration of multiple systems (mechanical, electrical, software)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Design Process</h3>
+            <p>The project started with modeling and 3D printing the Travis Scott head, which required careful design to ensure it was both recognizable and structurally sound. After printing, the head was painted with attention to detail to capture the likeness.</p>
+            <p>The electronics integration involved connecting the Raspberry Pi to motor drivers for the car's movement system. Programming the Xbox Controller input to control the motors required understanding of GPIO pins and controller communication protocols.</p>
+            <p>The final assembly brought together the mechanical structure, electrical components, and software control into a cohesive, functional robot.</p>
+        </div>
+
+        <div class="highlights">
+            <h4>Key Learnings</h4>
+            <ul>
+                <li>3D modeling and printing techniques for custom designs</li>
+                <li>Integration of hardware and software systems</li>
+                <li>Raspberry Pi programming and GPIO control</li>
+                <li>Motor control and robotics fundamentals</li>
+                <li>Problem-solving through iterative design and testing</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Demo Video</h3>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 10px; margin-bottom: 2rem;">
+                <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                    <source src="travis-bot-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Images</h3>
+            <div class="image-gallery">
+                <img src="travis-bot-1.png" alt="Travis Bot View 1" class="gallery-image">
+                <img src="travis-bot-2.png" alt="Travis Bot View 2" class="gallery-image">
+                <img src="travis-bot-3.png" alt="Travis Bot View 3" class="gallery-image">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Future Improvements</h3>
+            <p>Potential enhancements for Travis Bot include:</p>
+            <ul>
+                <li>Adding autonomous navigation capabilities</li>
+                <li>Integrating sensors for obstacle detection</li>
+                <li>Adding audio playback functionality</li>
+                <li>Implementing computer vision for object tracking</li>
+                <li>Developing a mobile app for wireless control</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sachin Patel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
