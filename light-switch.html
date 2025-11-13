@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Light Switch - Sachin Patel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-header h2 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .project-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            background: #f7fafc;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h3 {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .content-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: #f7fafc;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .highlights {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlights h4 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .stat-box {
+            background: #f0f4ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #667eea;
+        }
+
+        .stat-box h4 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box p {
+            color: #2d3748;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-header h2 {
+                font-size: 2rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+        <h1>Remote Light Switch</h1>
+    </header>
+
+    <div class="container">
+        <div class="project-header">
+            <div class="project-meta">
+                <span><strong>Type:</strong> IoT/Home Automation</span>
+                <span><strong>Date:</strong> 2024</span>
+                <span><strong>Role:</strong> Solo Project</span>
+            </div>
+        </div>
+
+        <img src="project2.png" alt="Remote Light Switch" class="hero-image">
+
+        <div class="content-section">
+            <h3>The Problem</h3>
+            <p>We've all been there - you're comfortable in bed, about to fall asleep, and realize the lights are still on. Getting up to flip the switch is annoying, especially when you're already settled in. I decided to engineer a solution that would let me control my lights without leaving my bed.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>The Solution</h3>
+            <p>I designed and built a device that physically toggles a light switch using a servo motor with a custom-designed arm. The system is controlled wirelessly via a handheld remote, allowing me to turn the lights on and off from anywhere in the room - especially from the comfort of my bed.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Technologies Used</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">RF Transmitter/Receiver</span>
+                <span class="tech-tag">Servo Motor</span>
+                <span class="tech-tag">SolidWorks</span>
+                <span class="tech-tag">Assembly Language</span>
+                <span class="tech-tag">Low-Power Design</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Wireless Control:</strong> RF transmitter and receiver enable remote operation from across the room</li>
+                <li><strong>Custom Mechanical Design:</strong> 3D-modeled arm in SolidWorks perfectly fits standard light switches</li>
+                <li><strong>Reliable Actuation:</strong> Servo motor provides precise and consistent switch toggling</li>
+                <li><strong>Extended Battery Life:</strong> Optimized power consumption using assembly language</li>
+                <li><strong>Easy Installation:</strong> Mounts directly onto existing light switches without modification</li>
+            </ul>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 3rem 0;">
+            <div class="stat-box">
+                <h4>100x</h4>
+                <p>Battery Life Improvement</p>
+            </div>
+            <div class="stat-box">
+                <h4>10 Days</h4>
+                <p>Battery Duration After Optimization</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Design Process</h3>
+            <p>The project began with designing the mechanical arm in SolidWorks. The arm needed to reliably flip a standard toggle switch while being compact enough to mount on the wall without being obtrusive. After several iterations, I arrived at a design that could be 3D printed and provided the right leverage for consistent switching.</p>
+            <p>The electronics consisted of two Arduino systems: one in the remote (transmitter) and one mounted at the light switch (receiver). The RF communication module allowed wireless control from across the room without line-of-sight requirements.</p>
+            <p>The most challenging aspect was power optimization. Initially, the device drained batteries in just 10 hours. By rewriting critical sections in assembly language and implementing aggressive sleep modes, I extended the battery life to 10 days - a 24x improvement that made the device practical for everyday use.</p>
+        </div>
+
+        <div class="highlights">
+            <h4>Technical Challenges Overcome</h4>
+            <ul>
+                <li><strong>Power Optimization:</strong> Achieved 24x battery life improvement through assembly language optimization and sleep mode implementation</li>
+                <li><strong>Mechanical Design:</strong> Created a custom arm that works reliably with different switch positions and provides sufficient torque</li>
+                <li><strong>Signal Reliability:</strong> Tuned RF communication to work consistently through walls and at various distances</li>
+                <li><strong>Mounting Solution:</strong> Designed a secure mounting system that doesn't damage walls or switches</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Project Images</h3>
+            <div class="image-gallery">
+                <img src="light-switch-1.png" alt="Light Switch Device" class="gallery-image">
+                <img src="light-switch-2.png" alt="Remote Control" class="gallery-image">
+                <img src="light-switch-3.png" alt="Mechanical Arm" class="gallery-image">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>What I Learned</h3>
+            <ul>
+                <li>Low-level programming in assembly language for microcontroller optimization</li>
+                <li>Power management techniques for battery-operated devices</li>
+                <li>3D modeling and CAD design with SolidWorks</li>
+                <li>RF communication protocols and antenna design considerations</li>
+                <li>Iterative prototyping and testing methodologies</li>
+                <li>The importance of user experience in home automation devices</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Future Improvements</h3>
+            <p>Potential enhancements for this project include:</p>
+            <ul>
+                <li>Integration with smart home systems (Alexa, Google Home)</li>
+                <li>Multiple switch control from a single remote</li>
+                <li>Smartphone app for modern wireless control</li>
+                <li>Solar charging capability for indefinite battery life</li>
+                <li>Voice control integration</li>
+                <li>Dimmer switch compatibility</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sachin Patel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
